@@ -1,8 +1,8 @@
 // Select our page's elements
-const container = document.querySelector('.container');
+const container = document.querySelector(".container");
 const div1 = document.querySelector("#div1");
 const div2 = document.querySelector("#div2");
-const button = document.querySelector('button');
+const button = document.querySelector("button");
 
 // Create list of hex values with starting and ending values
 const gradients = [
@@ -29,7 +29,23 @@ const gradients = [
 ];
 
 // So we want to pick one of the gradients at random
-let random = (xs) => xs[Math.floor(Math.random() * xs.length)];
+const random = (xs) => xs[Math.floor(Math.random() * xs.length)];
 
 // Now we want to apply the new hex values to our bg and divs
-container.style.background = `linear-gradient(to bottom, ${random(gradients).start}, ${random(gradients).end})`;
+// container.style.background = `linear-gradient(to bottom, ${random(gradients).start}, ${random(gradients).end})`;
+// div1.style.background = `${random(gradients).start}`;
+// div2.style.background = `${random(gradients).end}`;
+
+// Now put em in an click event
+button.addEventListener("click", handleClick);
+
+function handleClick() {
+  setNewColors(gradients);
+}
+
+function setNewColors(arr) {
+  let newColors = random(arr);
+  container.style.background = `linear-gradient(to bottom, ${newColors.start}, ${newColors.end})`;
+  div1.style.background = `${newColors.start}`;
+  div2.style.background = `${newColors.end}`;
+}
