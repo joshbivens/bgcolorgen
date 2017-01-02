@@ -51,6 +51,6 @@ function setNewColors(arr) {
 }
 
 // TODO:
-// - Add inital color values
+// - Add inital color values (DONE)
 // - Add the text values of the colors to the color cards
 // - Add another box that displays the gradient info
