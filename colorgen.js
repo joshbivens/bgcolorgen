@@ -2,6 +2,9 @@
 const div1 = document.querySelector("#div1");
 const div2 = document.querySelector("#div2");
 
+// Add button
+const button = document.querySelector('button');
+
 // Create list of hex values with starting and ending values
 const gradients = [
   {
@@ -29,3 +32,4 @@ const gradients = [
 // So we want to pick one of the gradients at random
 let random = (xs) => xs[Math.floor(Math.random() * xs.length)];
 
+// Now we want to apply the new hex values to our bg and divs
