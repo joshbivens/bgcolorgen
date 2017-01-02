@@ -49,3 +49,8 @@ function setNewColors(arr) {
   div1.style.background = `${newColors.start}`;
   div2.style.background = `${newColors.end}`;
 }
+
+// TODO:
+// - Add inital color values
+// - Add the text values of the colors to the color cards
+// - Add another box that displays the gradient info
