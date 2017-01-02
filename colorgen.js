@@ -1,5 +1,5 @@
 // Select our page's elements
-const body = document.querySelector('body');
+const container = document.querySelector('.container');
 const div1 = document.querySelector("#div1");
 const div2 = document.querySelector("#div2");
 const button = document.querySelector('button');
@@ -32,4 +32,4 @@ const gradients = [
 let random = (xs) => xs[Math.floor(Math.random() * xs.length)];
 
 // Now we want to apply the new hex values to our bg and divs
-body.style.background = `linear-gradient(to bottom, ${random(gradients).start}, ${random(gradients).end})`;
+container.style.background = `linear-gradient(to bottom, ${random(gradients).start}, ${random(gradients).end})`;
