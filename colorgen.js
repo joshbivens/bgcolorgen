@@ -1,6 +1,6 @@
 // Select our divs
-const div1 = document.querySelector("div1");
-const div2 = document.querySelector("div2");
+const div1 = document.querySelector("#div1");
+const div2 = document.querySelector("#div2");
 
 // Create list of hex values with starting and ending values
 const gradients = [
@@ -24,4 +24,8 @@ const gradients = [
     start: "#16BFFD",
     end: "#CB3066"
   },
-]
+];
+
+// So we want to pick one of the gradients at random
+let random = (xs) => xs[Math.floor(Math.random() * xs.length)];
+
