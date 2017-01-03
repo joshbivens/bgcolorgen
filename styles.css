@@ -4,13 +4,23 @@ body {
   font-family: Arial, Helvetica, sans-serif
 }
 
-.container {
-  height: 100%;
-  width: 100%;
+.flex {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.card {
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
   background: linear-gradient(to bottom, #4ca2cd, #67B26F);
 }
 
@@ -18,7 +28,7 @@ h3 {
   margin: 10px;
 }
 
-#div1, #div2 {
+.div1, .div2 {
   position: relative;
   height: 200px;
   width: 200px;
@@ -26,11 +36,11 @@ h3 {
   margin: 20px;
 }
 
-#div1 {
+.div1 {
   background: #4ca2cd;
 }
 
-#div2 {
+.div2 {
   background: #67B26F;
 }
 
@@ -40,9 +50,6 @@ button {
   right: 30px;
   border: 0;
   padding: 15px 20px;
-  background: #000;
-  color: #fff;
-  border-radius: 5px;
   text-transform: uppercase;
   cursor: pointer;
   transition: 0.1s ease;
@@ -52,13 +59,16 @@ button:hover {
   transform: scale(1.05);
 }
 
-#color1, #color2 {
+.color1, .color2 {
   position: absolute;
   bottom: 10px;
   left: 10px;
-  height: 25px;
-  width: 80px;
-  border-radius: 5px;
-  background: #000;
-  color: #fff;
+  padding: 10px 15px;
+}
+
+.gradient-info {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  padding: 10px 15px;
 }
